@@ -1,0 +1,378 @@
+/*
+Theme Name: betravel
+Theme URI: http://wordpress.org/themes/betravel
+Author: Tkachenko
+Author URI: http://wordpress.org/
+Description: In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: betravel
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font-family: Arial, sans-serif;font-size:12px;background:#FFFFFF; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited                {   text-decoration:none;outline:none; }
+a:hover                        { text-decoration:none;outline:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#wrap {
+	background:url(images/bg.png) no-repeat;
+	width :1024px;
+	margin: 0 auto;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#header {
+	overflow:hidden;
+}
+.top-nav {
+	background:#142849;
+	overflow:hidden;
+}
+.top-nav span{
+	background:url(images/fl.png) no-repeat;
+	display:block;
+	height:17px;
+	text-indent:-50000px;
+	width:24px;
+	float:right;
+	margin:11px 49px 10px 18px;
+}
+.top-nav select {
+	float:right;
+	margin-top:11px;
+	font-size:8px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#757575;
+	padding:2px 10px 2px 2px;
+}
+.top-nav label {
+	float:right;
+	margin:13px 5px 0 0;
+	font-size:12px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#FFFFFF;
+
+}
+.top-nav ul {
+	float:right;
+	margin:13px 30px 0 0;
+}
+.top-nav ul li{
+	display:inline;
+	font-size:12px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	border-right:1px solid #FFFFFF;
+}
+.top-nav ul li a {
+	color:#FFFFFF;
+	padding:3px 6px 0 8px
+}
+.top-nav ul li:last-child {
+	border:none;
+}
+.search {
+	float:right;
+	margin:56px 46px 0 0;
+}
+.search  li {
+	display:inline;
+}
+.search  li a {
+	background:#FF7904;
+	font-size:12px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#FFFFFF;
+	padding: 8px 11px 8px 11px;
+	border-radius:20px;
+}
+.search  li input{
+	background:#E8E8E8;
+	font-size:11px;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+	color:#000000;
+	padding: 10px 40px 8px 13px;
+	border-radius:20px;
+	border:none;
+}
+#header h1 {
+	font-size:55px;
+	font-family:Black Chancery, sans-serif;
+	font-weight:normal;
+	color:#DEEEFD;
+	width:280px;
+	margin: 90px 0 0 53px;
+}
+#header p {
+	font-size:20px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#FFFFFF;
+	width:280px;
+	margin:-13px 0 0 110px;
+}
+#header .cart {
+	background:#FE7700;
+	width:215px;
+	margin:322px 0 13px 65px;
+	padding:14px 0 21px 13px;
+}
+#header .cart li p{
+	font-size:18px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#F3D62F;
+	margin:0;
+}
+#header .cart li span{
+	font-size:13px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#FFFFFF;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.nav {
+	clear:both;
+	float:right;
+	background:#231E1B;
+	padding:10px 45px 13px 10px;
+	margin:10px 41px 0 0;
+}
+.nav li {
+	display:inline;
+	font-size:12px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	padding-left:20px;
+}
+.nav li a {
+	color:#FFFFFF;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#content {
+	background:#FFFFFF;
+	margin:0 44px 0 65px;
+	overflow:hidden;
+}
+.sidebar{
+	width:238px;
+	float:left;
+	overflow:hidden;
+}
+.sidebar h3{
+	background:#D21B15;
+	font-size:18px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#FFFFFF;
+	padding: 9px 0px 10px 25px;
+	margin:17px 10px 23px 15px;
+}
+.sidebar ul{
+	margin-left:65px;
+}
+.sidebar ul li {
+	background:url(images/point.png) no-repeat left center;
+	font-size:11px;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+	margin-bottom:11px;
+}
+.sidebar ul li a {
+	color:#231E1B;
+	padding-left:15px;
+}
+.banner {
+	background:url(images/banner.png) no-repeat ;
+	overflow:hidden;
+	width:216px;
+	height:305px;
+	margin:30px 0 20px 13px;
+}
+.beach {
+	font-size:41px;
+	font-family:Ariston, sans-serif;
+	font-weight:normal;
+	color:#FFF100;
+	margin:17px 0 0 18px;
+	width:130px;
+	line-height:35px;
+}
+.beach span {
+	color:#FF7D02;
+	padding-left:23px;
+}
+.go {
+	float:right;
+	font-size:34px;
+	font-family:Ariston, sans-serif;
+	font-weight:normal;
+	color:#FF7301;
+	-webkit-transform: rotate(-40deg); 
+	-moz-transform: rotate(-40deg);
+	-ms-transform: rotate(-40deg);
+	-o-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+	margin-top:10px;
+}
+.from {
+	font-size:13px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#FFFFFF;
+	margin-left:41px;
+}
+.cost {
+	font-size:30px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#C00513;
+	margin-left:41px;
+}
+.conteiner {
+	overflow:hidden;
+}
+.conteiner ul {
+	margin:17px 8px 0 0;
+	overflow:hidden;
+}
+.conteiner ul li {
+	float:left;
+	border:1px solid #E5E5E5;
+	padding: 20px 15px 19px 15px;
+	margin: 0 6px 6px 0;
+	width:185px;
+}
+.conteiner ul li h2 {
+	font-size:15px;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+	color:#000000;
+	padding-bottom:8px;
+}
+.conteiner ul li p {
+	font-size:12px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#757575;
+	padding-top:16px;
+}
+.conteiner ul li .costt {
+	font-size:15px;
+	font-family:Arial, sans-serif;
+	font-weight:normal;
+	color:#0FADEC;
+	padding:15px 0 15px 0;
+}
+.conteiner ul li a {
+	background:url(images/arrow.png) no-repeat 10% center;
+	border:1px solid #E5E5E5;
+	border-radius:20px;
+	font-size:12px;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+	color:#000000;
+	padding:10px 30px 10px 36px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#footer {
+	background:#FFFFFF;
+	margin:0 44px 0 65px;
+	overflow:hidden;
+	border-top:1px solid #E5E5E5;
+}
+#footer ul {
+	margin:23px 0 0 58px;
+}
+#footer ul li {
+	display:inline;
+	font-size:12px;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+	border-right:2px solid #0FADED;
+}
+#footer ul li a {
+	color:#0FADEC;
+	padding:0 10px 0 10px
+}
+#footer ul li:last-child {
+	border:none;
+}
+#footer p {
+	font-size:11px;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+	color:#353535;
+	margin:14px 0 0 66px;
+	float:left;
+}
+#footer span {
+	background:url(images/eye.png) no-repeat;
+	display:inline-block;
+	height:31px;
+	text-indent:-50000px;
+	width:40px;
+	margin:7px 0 10px 25px;
+}
